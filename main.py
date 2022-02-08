@@ -22,7 +22,7 @@ def get_augs(image_file,width,height):
     agl = st.slider('Do you want to Rotate the Image', -180, +180, value=0, step=1)
     img = img.rotate(agl)
     angle = agl
-    st.image(img , width = width)
+    st.image(img , width = 250)
     print(agl)
     return  agl
 
